@@ -48,9 +48,14 @@ h1 {
     font-weight: bold;
 }
 
+/*for the recipe pages*/
+
 .recipe-card {
     width: 400px;
-    background-color: #FFFAFA;    
+    background-color: #FFFAFA;   
+    border: 2px solid yellow; 
+    margin: 0 auto;
+    padding: 20px;
 }
 
 
