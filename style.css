@@ -1,3 +1,4 @@
+/* Default styles */
 
 * {
     line-height: 1.5;
@@ -5,6 +6,7 @@
 
 body {
     font-family: Bradley Hand, cursive;
+    margin: 0; /* Remove default body margin */
 }
 
 h1 {
@@ -18,7 +20,6 @@ h1 {
     text-align: left;
 }
 
-
 .link-card {
     background-color: rgba(255, 99, 71, 0.2);
     text-align: center;
@@ -27,8 +28,6 @@ h1 {
     width: 450px;
     margin: 0 auto;
     padding: 10px;
-
-    
 }
 
 .link-card ul {
@@ -41,34 +40,47 @@ h1 {
     margin-bottom: 5px;
 }
 
-.link-card ul li a{
+.link-card ul li a {
     text-decoration: underline;
-    color:  rgba(255, 99, 71, 1);
+    color: rgba(255, 99, 71, 1);
     font-size: medium;
     font-weight: bold;
 }
 
-/*for the recipe pages*/
-
 .recipe-card {
     width: 400px;
-    background-color: #FFFAFA;   
-    border: 2px solid yellow; 
+    background-color: #FFFAFA;
+    border: 2px solid yellow;
     margin: 0 auto;
     padding: 20px;
 }
 
-
-.recipe-card h2{
+.recipe-card h2 {
     font-size: 20px;
-    color:  rgb(255, 43, 5);
+    color: rgb(255, 43, 5);
 }
 
-ol li{
+ol li {
     list-style-type: lower-roman;
 }
 
 img {
     height: auto;
     width: 250px;
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 600px) {
+    .link-card {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .recipe-card {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    img {
+        width: 100%; /* Make images fluid for smaller screens */
+    }
 }
